@@ -1,0 +1,1160 @@
+/*-----------------------------Page Css----------------------------------------*/
+
+/*1)Colors codes*/
+/*2)Fonts*/
+/*3)General Page*/
+/*4)Header*/
+/*5)Search Bar*/
+/*6)Most Popular*/
+/*7)Hotel*/
+/*8)Activities*/
+/*9)Footer*/
+/*-----------------------------Page Générale----------------------------------*/
+/*--------Colors Codes--------------------------------------------------------*/
+/*
+Blue:#0065FC;
+Light Blue:#DEEBFF;
+Grey Background:#F2F2F2;
+/* -------------------- Reset -------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.cadre_pop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/*--------Fonts---------------------------------------------------------------*/
+
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway-SemiBold.eot");
+  src: url("Raleway-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("Raleway-SemiBold.woff2") format("woff2"),
+    url("Raleway-SemiBold.woff") format("woff"),
+    url("Raleway-SemiBold.ttf") format("truetype"),
+    url("Raleway-SemiBold.svg#Raleway-SemiBold") format("svg");
+  font-style: normal;
+  font-display: swap;
+}
+
+/*-----------------------------General Page----------------------------------*/
+
+/*body-bloc-page*/
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/*----------------------------------------------------------------------------*/
+/*                                Header                                      */
+/*----------------------------------------------------------------------------*/
+.header {
+  display: block;
+}
+
+.header_main {
+  display: block;
+  margin: 0 auto;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+/*Logo*/
+
+#logo {
+  display: block;
+  width: auto;
+  padding-left: 10px;
+  font-size: 60px;
+  font-weight: bold;
+}
+#logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+nav {
+  display: block;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+#signup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: #0065fc;
+  text-decoration: none;
+  font-weight: 700;
+  flex-wrap: wrap;
+  font-family: "Raleway";
+  font-size: 18px;
+  width: calc(100% - 160px);
+}
+#signup a {
+  color: #0065fc;
+}
+.presentation,
+.services {
+  width: 50%;
+  text-align: center;
+  border-bottom: 3px solid #f2f2f2;
+  padding: 9px;
+  font-size: 15px;
+}
+header nav .presentation:hover,
+header nav .services:hover {
+  border-bottom: 3px solid #0065fc;
+}
+header nav .presentation:hover a,
+header nav .services:hover a {
+  color: #0065fc;
+}
+header nav .presentation:focus,
+header nav .services:focus {
+  color: #f2f2f2;
+  border-bottom: 3px solid #f2f2f2;
+}
+.presentation a,
+.services a {
+  color: black;
+}
+
+/*---------------------------------------------------------------------*/
+/*                            Search Bar                                */
+/*---------------------------------------------------------------------*/
+
+/*Header Main*/
+section .main {
+  display: flex;
+  padding: 2rem 1.5rem 1rem 1.5rem;
+}
+
+h1 {
+  display: block;
+  text-align: start;
+  margin-block-start: 10%;
+  margin-block-end: 5%;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 20px 20px 5px 20px;
+}
+
+.sous_titre {
+  padding-top: 0%;
+  font-size: 0.86em;
+  margin: 10px 0px 10px 20px;
+}
+
+/*Information*/
+.info {
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-left: 2px;
+  font-size: 1.075em;
+  width: 100%;
+  padding-top: 2px;
+}
+.info p {
+  padding: 30px 0px 0px 10px;
+  font-size: 0.9em;
+}
+/*Icone information*/
+.circle-info {
+  display: block;
+  color: #0065fc;
+  font-size: 12px;
+  border: 3px solid #f2f2f2;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  padding-left: 5px;
+  bottom: 10px;
+  margin: 20px 0px 20px 20px;
+}
+.circle-info{
+position: relative;
+    top: 10px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                           Most Popular                                                       */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+#bloc-competences {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.bloc-competences {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  font-size: 20px;
+  width: 100%;
+  margin: 1rem;
+  padding: 10px 0px 0px 0px;
+}
+.bloc-competences h2 {
+  font-weight: 700;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.bloc-competences .fas {
+  color: black;
+}
+.competences {
+  border-radius: 20px;
+  border: 7px solid white;
+  background: white;
+  margin: 0px 20px 20px 20px;
+  box-shadow: 0px 0px 10px grey;
+  display: flex;
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+  padding: 0px;
+}
+.competences {
+  transform: translate(1px, -2px);
+}
+.competences:hover {
+  transform: scale(1.05);
+}
+.cadre-competences {
+  display: block;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+.cadre-competences img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+.cadre_text {
+  display: block;
+  min-width: 52%;
+}
+.cadre_text .titre_h3 {
+  display: block;
+  font-size: 0.9em;
+  color: black;
+  padding: 10px 0px 10px 0px;
+  font-weight: 800;
+}
+.cadre_text .texte_p {
+  display: block;
+  font-size: 0.8em;
+  color: black;
+  padding: 0px 0px 40px 0px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                          Présentation                                                             */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+#section_presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.bloc_section {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+.bloc_section h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 20px 25px 20px 10px;
+}
+.biographie {
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px grey;
+  width: 95%;
+  margin-bottom: 15px;
+}
+
+.cadre_biographie {
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 5px;
+}
+.cadre_biographie img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+.biographie_cadre_text {
+  display: block;
+  text-align: start;
+  padding: 5px 10px 5px 10px;
+}
+.biographie_cadre_text .titre_h3 {
+  display: block;
+    width: 100%;
+    text-align: start;
+    font-size: 1.3em;
+    color: black;
+    font-weight: 800;
+    padding: 10px 0px 10px 0px;
+}
+.biographie_cadre_text .texte_p {
+  display: block;
+  font-size: 0.8em;
+  color: black;
+  padding: 3px 0px 5px 10px;
+}
+
+.en_savoir_plus{
+  width: 100%;
+  position: relative;
+  font-weight: bold;
+  color: black;
+  font-size: 0.95em;
+  padding: 10px 2px 40px 10px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*                                                        Services                                                        */
+/*----------------------------------------------------------------------------------------------------------------------------*/
+#section_services {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0px;
+  width: 100%;
+}
+.bloc_section1 h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 90px 10px 20px;
+}
+
+.bloc_section2 {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0px 5px 0px 5px;
+}
+
+.supports {
+  display: block;
+  border-radius: 35px;
+  box-shadow: 0px 0px 0px grey;
+  width: 100%;
+  padding: 15px;
+}
+.carte_1 {
+  width: 100%;
+}
+.carte_2 {
+  width: 100%;
+}
+
+.carte_3 {
+  width: 100%;
+}
+.carte_4 {
+  width: 100%;
+}
+.cadre_supports {
+  display: block;
+  width: 100%;
+  height: 170px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px grey;
+}
+.cadre_supports {
+  transform: translate(1px, -2px);
+}
+.cadre_supports img {
+  display: block;
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+img .img1 {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.cadre_supports .titre_h4 {
+  display: block;
+  font-size: 0.65em;
+  font-weight: 800;
+  color: black;
+  padding: 15px;
+}
+.cadre_supports:hover {
+  transform: scale(1.05); /* Agrandi les cartes au survol */
+}
+.supports_cards1,
+.supports_cards3 {
+  width: 80%;
+  height: 200px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*                                                            Footer                                                                          */
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+footer {
+  width: 100%;
+  display: block;
+}
+.bloc_footer {
+  background: #f2f2f2;
+  padding: 1rem 1rem 1.5rem 1rem;
+  text-align: center;
+}
+footer li {
+  font-size: 15px;
+  padding: 5px;
+  padding-bottom: 0.25rem;
+  list-style: none;
+}
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2px;
+  flex-direction: column;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+footer ul {
+  display: block;
+}
+footer a {
+  color: black;
+}
+.titre_footer {
+  display: block;
+  font-size: 1em;
+  font-weight: 800;
+  padding: 30px 0px 20px 2px;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+/*                          Medias Queries pour Responsive Tablette et Desktop                          */
+/*------------------------------------------------------------------------------------------------------*/
+
+/* Pour Tablettes minis*/
+@media screen and (min-width: 540px) and (max-width: 735px) {
+  /*Compétences */
+  .cadre_text .titre_h3 {
+    display: block;
+    font-size: 0.9em;
+    color: black;
+    padding: 10px 0px 10px 0px;
+    font-weight: 800;
+  }
+  .cadre_text .texte_p {
+    display: block;
+    font-size: 0.8em;
+    color: black;
+    padding: 5px 0px 50px 0px;
+  }
+
+  /* Présentation*/
+  #section_presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .biographie_cadre_text {
+    display: block;
+    text-align: start;
+    padding: 5px 35px 5px 0px;
+  }
+  .biographie_cadre_text .titre_h3 {
+    display: block;
+    width: 100%;
+    text-align: start;
+    font-size: 0.88em;
+    color: black;
+    font-weight: 800;
+    padding: 0px 0px 0px 5px;
+  }
+  .biographie_cadre_text .texte_p {
+    display: block;
+    font-size: 0.8em;
+    color: black;
+    padding: 3px 0px 5px 5px;
+  }
+  
+  .biographie {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 92%;
+  }
+
+  /* Services*/
+  .bloc_section1 h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 320px 10px 15px;
+  }
+  footer nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Sur tous types de tablettes */
+@media all and (min-width: 736px) and (max-width: 990px) {
+  /*Information*/
+  .circle-info{
+    position: relative;
+    top: 10px;
+  }
+  .info {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 2px;
+    font-size: 1.075em;
+    width: 100%;
+    padding-top: 10px;
+  }
+  
+  /* Bloc Pop*/
+  .competences {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 26%;
+  }
+  .cadre-competences {
+    display: block;
+    border-radius: 10px;
+  }
+  .cadre-competences img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cadre_text {
+    display: block;
+  }
+  .cadre_text .texte_p {
+    display: block;
+    font-size: 0.7em;
+    color: black;
+    padding: 0px 0px 44px 0px;
+  }
+  .cadre_text .titre_h3 {
+    font-size: 0.75em;
+    color: black;
+    font-weight: bold;
+    padding: 5px 0px 5px 2px;
+  }
+
+  /*Présentation*/
+  #section_presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .biographie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 92%;
+  }
+  .biographie_cadre_text {
+    display: block;
+    text-align: start;
+    padding: 20px;
+    line-height: 17px;
+  }
+  .en_savoir_plus {
+    font-size: 1em;
+    padding: 2px 2px 20px 10px;
+  }
+  /*-------Activités----------------------------------------------------*/
+  .bloc_section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #section_services {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
+    width: 100%;
+  }
+  .carte_1 {
+    width: 75%;
+  }
+  .carte_2 {
+    width: 75%;
+  }
+
+  .carte_3 {
+    width: 75%;
+  }
+  .carte_4 {
+    width: 75%;
+  }
+  .cadre_supports {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px grey;
+  }
+  .cadre_supports.cadre_1 {
+    height: 400px;
+  }
+
+  img.img1 {
+      display: block;
+      width: 100%;
+      height: 320px;
+      border: 2px solid black;
+  }
+  img.img4 {
+    display: block;
+    width: 100%;
+    height: 320px;
+    border: 2px solid black;
+
+  }
+  .cadre_supports.cadre_2 {
+    height: 185px;
+  }
+
+  /*Footer*/
+  .bloc_footer {
+    background: #f2f2f2;
+    padding: 1rem 1rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .bloc_footer nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: space-around;
+  }
+  .bloc_contact {
+    padding-right: 50px;
+    padding-left: 30px;
+  }
+  .bloc_mes_forfaits {
+    padding-right: 50px;
+  }
+  .bloc_assistance {
+    font-size: 16px;
+  }
+}
+
+/*Version Desktop*/
+
+@media all and (min-width: 991px) {
+  body {
+    max-width: 1700px;
+    margin: auto;
+  }
+
+  /* Header*/
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header_main nav {
+    height: 90px;
+  }
+  .en_tete {
+    height: 100px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .presentation,
+  .services {
+    width: 15%;
+    text-align: center;
+    border-bottom: none;
+    border-top: 6px solid white;
+    font-size: 16px;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 0px 0px;
+  }
+  .services,
+  .presentation {
+    margin: 0px 0px 0px 0px;
+    border-top: 3px solid #f2f2f2;
+    padding: 40px;
+  }
+  header nav .presentation:hover,
+  header nav .services:hover {
+    border-bottom: none;
+    border-top: 3px solid #0065fc;
+  }
+  header nav .presnetation:hover a,
+  header nav .services:hover a {
+    color: #0065fc;
+  }
+  header nav .presentation:focus,
+  header nav .services:focus {
+    color: #f2f2f2;
+    border-top: 3px solid #f2f2f2;
+    border-bottom: none;
+  }
+  #logo {
+    display: flex;
+    width: 160px;
+    font-size: 60px;
+    font-weight: bold;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px;
+  }
+  #signup {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: #0065fc;
+    text-decoration: none;
+    font-weight: 700;
+    flex-wrap: wrap;
+    font-family: "Raleway";
+    font-size: 16px;
+    width: 8%;
+    order: 4;
+    padding: 2px 20px 0px 0px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  li #logo {
+    margin: auto;
+  }
+  li .presentation {
+    width: 25%;
+    display: flex;
+  }
+  li .services {
+    width: 25%;
+    display: flex;
+  }
+  
+
+  h1 {
+    display: block;
+    text-align: center;
+    margin-block-start: 10%;
+    margin-block-end: 5%;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 30px 20px 5px 20px;
+  }
+  .sous_titre {
+    padding-top: 0%;
+    font-size: 1.02em;
+    margin: 10px 0px 10px 20px;
+    text-align: center;
+  }
+
+  .circle_info {
+    font-size: 30px;
+  }
+
+  /*Bloc compétences*/
+  .container_desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #bloc-competences {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 20px;
+    order: 2;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  .bloc-competences {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 20px;
+    width: 90%;
+    margin: 1rem;
+    padding: 10px 0px 0px 0px;
+    align-items: center;
+  }
+  .bloc-comptences h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 20px;
+    width: 100%;
+    padding-top: 13px;
+  }
+  .competences {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 85%;
+    height: 138px;
+  }
+  .cadre-competences {
+    display: block;
+    padding-right: 5px;
+    border-radius: 10px;
+  }
+  .cadre-competences img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-right: 10px;
+    border-radius: 10px;
+  }
+
+  .cadre_text {
+    display: block;
+    min-width: 50%;
+    padding: 5px;
+  }
+  .cadre_text .titre_h3 {
+    display: block;
+    font-size: 0.85em;
+    color: black;
+    font-weight: bold;
+    padding: 0px 0px 10px 0px;
+  }
+  .cadre_text .texte_p {
+    display: block;
+    font-size: 0.7em;
+    color: black;
+    padding-bottom: 48px;
+  }
+  
+  /*Presentation*/
+
+  #section_presentation {
+    display: flex;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    order: 1;
+    align-content: flex-start;
+    padding: 30px 30px 30px 30px;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .bloc_section h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 25px 25px 10px;
+  }
+  .biographie {
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px grey;
+    width: 95%;
+    max-height: 670px;
+  }
+  .cadre_biographie {
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+  }
+
+  .cadre_biographie img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+  }
+  .biographie_cadre_text {
+    display: block;
+    text-align: start;
+    padding: 5px 10px 5px 10px;
+  }
+  .biographie_cadre_text .titre_h3 {
+    display: block;
+    width: 100%;
+    text-align: start;
+    font-size: 1.3em;
+    color: black;
+    font-weight: bold;
+    padding: 10px 0px 5px 0px;
+  }
+
+  .biographie_cadre_text .texte_p {
+    display: block;
+    font-size: 0.79em;
+    color: black;
+  }
+
+  .en_savoir_plus {
+    width: 100%;
+    position: relative;
+    font-weight: bold;
+    color: black;
+    font-size: 1.25em;
+    padding: 10px 2px 30px 10px;
+  }
+  /*-----------------Activites-----------------------------------------*/
+  .bloc_section1 h2 {
+    padding: 20px;
+    font-size: 1.5em;
+  }
+  .bloc_section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #section_services {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px 10px 50px 10px;
+    width: 100%;
+  }
+  .carte_1 {
+    width: 75%;
+  }
+  .carte_2 {
+    width: 75%;
+  }
+
+  .carte_3 {
+    width: 75%;
+  }
+  .carte_4 {
+    width: 75%;
+  }
+  .cadre_supports {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px grey;
+  }
+  .cadre_supports.cadre_1 {
+    height: 400px;
+  }
+
+  img.img1 {
+    display: block;
+    width: 100%;
+    height: 320px;
+    border: 2px solid black;
+  }
+  img.img4 {
+    display: block;
+    width: 100%;
+    height: 320px;
+    border: 2px solid black;
+}
+  .cadre_supports.cadre_2 {
+    height: 185px;
+  }
+
+  /*-----Footer--------------------------------------------------------*/
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  footer li {
+    font-size: 16px;
+    padding: 5px;
+    padding-bottom: 0.25rem;
+    list-style: none;
+  }
+  .bloc_footer {
+    background: #f2f2f2;
+    padding: 1rem 1rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .bloc_footer nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: space-around;
+  }
+  .bloc_contact {
+    padding-right: 150px;
+    padding-left: 30px;
+  }
+  .bloc_mes_forfaits {
+    padding-right: 150px;
+  }
+  .bloc_assistance {
+    font-size: 16px;
+  }
+}
+/* Petits Breakpoints supplémentaires */
+
+@media all and (min-width: 991px) and (max-width: 1072px) {
+  .bloc-competences h2 {
+    font-size: 0.95em;
+    font-weight: bold;
+    padding-bottom: 20px;
+    width: 100%;
+    padding-top: 13px;
+  }
+  label:active {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
+  label:hover {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
+  .circle-icon:active,
+  .circle-icon:hover {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
+  #bloc-competences {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 20px;
+    order: 2;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-bottom: 40px;
+  }
+}
+@media all and (min-width: 991px) and (max-width: 1084px) {
+  .cadre_text .titre_h3 {
+    display: block;
+    font-size: 0.8em;
+    color: black;
+    font-weight: bold;
+    padding: 5px 0px 10px 0px;
+  }
+  .cadre_text .texte_p {
+    display: block;
+    font-size: 0.7em;
+    color: black;
+    padding-bottom: 14px;
+  }
+}
+@media all and (min-width: 1073px) {
+  .competences {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 146px;
+  }
+}
+@media all and (min-width: 1200px){
+.biographie{
+  max-height: 670px;
+}
+}
+/*----Changement pour site jorenservices--------*/
+
+#logo{
+height: 80px;
+}

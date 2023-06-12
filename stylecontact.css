@@ -1,0 +1,228 @@
+body{
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+
+
+
+/*------Header--------*/
+*----------------------------------------------------------------------------*/
+/*                                Header                                      */
+/*----------------------------------------------------------------------------*/
+.header {
+  display: block;
+}
+
+.header_main {
+  display: block;
+  margin: 0 auto;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+/*Logo*/
+
+#logo {
+  display: block;
+  width: auto;
+  padding-left: 10px;
+  font-size: 60px;
+  font-weight: bold;
+}
+#logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+li#logo{
+    width: 34%;
+
+}
+nav {
+  display: block;
+  width: 100%;
+}
+nav ul {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+        flex-direction: row;
+        flex-wrap: nowrap;
+}
+.container_contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+#signup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: #0065fc;
+  text-decoration: none;
+  font-weight: 700;
+  flex-wrap: wrap;
+  font-family: "Raleway";
+  font-size: 18px;
+  width: calc(100% - 160px);
+}
+#signup a {
+  color: #0065fc;
+}
+.titre2_page2{
+        text-align: center;
+        margin: 30px 10px 80px 10px;
+        border: 2px solid black;
+        border-radius: 70px;
+        background-color: grey;
+        color: white;
+        font-size: 1.090em;
+        padding: 10px 50px 10px 50px;
+    }
+
+.formulaire {
+    border: 2px solid black;
+    border-radius: 50px;
+}
+#form {
+    margin: 20px;
+    padding: 10px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input{
+    height: 30px;
+}
+
+button.bouton_envoyer{
+    padding: 10px;
+    margin: 20px 60px 20px 60px;
+    border-radius: 20px;
+}
+textarea#message{
+    max-width: 250px;
+}
+p{
+    padding: 15px;
+}
+footer{
+background-color: grey;
+margin: 50px 0px 0px 0px;
+height: 150px;
+}
+
+.paragraphe_de_fin{
+        color: white;
+}
+.bloc_footer{
+
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+}
+.liens_reseaux_sociaux{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+
+}
+.reseau_sociaux{
+    display: block;
+    padding: 20px;
+
+}
+.fa{
+    font-size:20px;
+    color:white;
+}
+
+/*---------Medias Queries---------*/
+@media all and (min-width: 700px){
+    
+    li#logo {
+        width: 20%;
+    }
+    .formulaire {
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 20px;
+    }
+    .titre2_page2 {
+        text-align: center;
+        margin: 0px 10px 80px 10px;
+        border: 2px solid black;
+        border-radius: 70px;
+        background-color: grey;
+        color: white;
+        font-size: 1.8em;
+        padding: 5px 50px 5px 50px;
+    }
+    button.bouton_envoyer {
+        padding: 20px;
+        margin: 20px 60px 20px 60px;
+        border-radius: 20px;
+        font-size: 25px;
+    }
+    p {
+        padding: 15px;
+        font-size: 1.5em;
+    }
+    .bloc_footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .fa{
+        font-size:50px;
+        color:white;
+    }
+    .reseau_sociaux{
+    padding: 0px 50px 0px 0px;
+    }
+    .liens_reseaux_sociaux {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .fa{
+        font-size:40px;
+        color:white;
+    }
+    input{
+        height: 30px;
+    }
+}
+
+    
